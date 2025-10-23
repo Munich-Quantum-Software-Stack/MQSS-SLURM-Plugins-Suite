@@ -1,0 +1,3 @@
+Error: operation wait on node rabbit@slurmnode1 timed out. Timeout value used: 10000
+/home/ubuntu/shared_nfs_slurm/test_job_submission/example5/./hpc-provider-ex.py:4: FutureWarning: The `qiskit` package is not installed, only `qiskit-terra` is installed. Starting in Qiskit 1.0.0 only the `qiskit` package will be published. Migrate any requirements files still using `qiskit-terra` to use `qiskit` instead. See https://qisk.it/1-0-packaging-migration for more detail.
+  from qiskit import QuantumCircuit

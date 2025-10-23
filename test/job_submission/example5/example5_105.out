@@ -1,0 +1,30 @@
+Submitted a sample job with qpu requirement ...
+Checking the hostname, where the job is allocated and run: 
+slurmnode1
+
+---------------------------------
+Loading the spack env
+
+--------------------------------------
+Starting rabbitmq-server
+Waiting for pid file '/home/ubuntu/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/rabbitmq-server-3.12.12-rjdaa6abf625tylkuaahjwkop3lbgoe2/var/lib/rabbitmq/mnesia/rabbit@slurmnode1.pid' to appear
+--------------------------------------
+
+Starting py_qdaemon
+--------------------------------------
+
+--------------------------------------
+Run the quantum application
+Job 2483000001 Submitted. Waiting for results...
+{'00': 1000, '11': 1000}
+--------------------------------------
+
+Stopping rabbitmq-server and py_qdaemon
+Quantum Daemon started sucessfully!
+Listening to requests on localhost:5672 in queue: qd_qrequest_reception_queue_slurmnode1
+Quantum Daemon stopped.
+Shutting down RabbitMQ node rabbit@slurmnode1 running at PID 2345
+Waiting for PID 2345 to terminate
+RabbitMQ node rabbit@slurmnode1 running at PID 2345 successfully shut down
+--------------------------------------
+

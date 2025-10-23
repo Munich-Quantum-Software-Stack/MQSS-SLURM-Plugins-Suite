@@ -1,0 +1,16 @@
+-----------------------------------------------
+Submitted a sample job with qpu requirement ...
+Checking the hostname, where the job is allocated and run: 
+slurmnode1
+-----------------------------------------------
+
+-----------------------------------------------
+Loading the spack env, e.g., qiskit, hpc-offloader
+-----------------------------------------------
+
+-----------------------------------------------
+Run the user quantum application
+Job 183859000001 Submitted. Waiting for results...
+{'11': 1000, '00': 1000}
+-----------------------------------------------
+

@@ -1,0 +1,166 @@
+------------------------------------
+Profling CPU, MEM, RUNTIME:
+------------------------------------
+Timestep 1: Fri Sep 13 12:02:48 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 2: Fri Sep 13 12:02:49 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 3: Fri Sep 13 12:02:50 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 4: Fri Sep 13 12:02:51 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 5: Fri Sep 13 12:02:52 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 6: Fri Sep 13 12:02:53 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 7: Fri Sep 13 12:02:54 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 8: Fri Sep 13 12:02:55 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 9: Fri Sep 13 12:02:56 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  162  0.0 beam.smp
+3674839 root                  610  0.0 beam.smp
+
+Timestep 10: Fri Sep 13 12:02:57 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  153  0.0 beam.smp
+3674839 root                 1112  0.0 beam.smp
+
+Timestep 11: Fri Sep 13 12:02:58 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  204  0.0 beam.smp
+3674839 root                  763  0.0 beam.smp
+
+Timestep 12: Fri Sep 13 12:02:59 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  219  0.0 beam.smp
+3674839 root                  573  0.0 beam.smp
+
+Timestep 13: Fri Sep 13 12:03:00 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  212  0.0 beam.smp
+3674839 root                  458  0.0 beam.smp
+
+Timestep 14: Fri Sep 13 12:03:01 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  197  0.0 beam.smp
+3674839 root                  382  0.0 beam.smp
+
+Timestep 15: Fri Sep 13 12:03:02 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  208  0.0 beam.smp
+3674839 root                  327  0.0 beam.smp
+
+Timestep 16: Fri Sep 13 12:03:03 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  231  0.0 beam.smp
+3674839 root                  286  0.0 beam.smp
+
+Timestep 17: Fri Sep 13 12:03:05 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  220  0.0 beam.smp
+3674839 root                  254  0.0 beam.smp
+
+Timestep 18: Fri Sep 13 12:03:06 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  208  0.0 beam.smp
+3674839 root                  230  0.0 beam.smp <defunct>
+
+Timestep 19: Fri Sep 13 12:03:07 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  189  0.0 beam.smp
+3675824 root                  0.0  0.0 py_qdaemon
+
+Timestep 20: Fri Sep 13 12:03:08 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  173  0.0 beam.smp
+3675824 root                 14.0  0.0 py_qdaemon
+
+Timestep 21: Fri Sep 13 12:03:09 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  160  0.0 beam.smp
+3675824 root                  7.0  0.0 py_qdaemon
+
+Timestep 22: Fri Sep 13 12:03:10 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  148  0.0 beam.smp
+3675824 root                  4.6  0.0 py_qdaemon
+
+Timestep 23: Fri Sep 13 12:03:11 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  138  0.0 beam.smp
+3675824 root                  3.5  0.0 py_qdaemon
+
+Timestep 24: Fri Sep 13 12:03:12 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  130  0.0 beam.smp
+3675824 root                  3.0  0.0 py_qdaemon
+
+Timestep 25: Fri Sep 13 12:03:13 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  122  0.0 beam.smp
+3675824 root                  2.5  0.0 py_qdaemon
+
+Timestep 26: Fri Sep 13 12:03:14 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  115  0.0 beam.smp
+3675824 root                  2.1  0.0 py_qdaemon
+
+Timestep 27: Fri Sep 13 12:03:15 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  109  0.0 beam.smp
+3675824 root                  1.8  0.0 py_qdaemon
+
+Timestep 28: Fri Sep 13 12:03:16 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                  104  0.0 beam.smp
+3675824 root                  1.6  0.0 py_qdaemon
+
+Timestep 29: Fri Sep 13 12:03:17 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                 99.3  0.0 beam.smp
+3675824 root                  1.5  0.0 py_qdaemon
+
+Timestep 30: Fri Sep 13 12:03:18 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                 94.8  0.0 beam.smp
+3675824 root                  1.4  0.0 py_qdaemon
+
+Timestep 31: Fri Sep 13 12:03:19 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                 90.7  0.0 beam.smp
+3675940 root                  0.0  0.0 beam.smp
+
+Timestep 32: Fri Sep 13 12:03:20 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+3674833 root                 87.4  0.0 beam.smp
+3675940 root                 2224  0.0 beam.smp
+
+Timestep 33: Fri Sep 13 12:03:21 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 34: Fri Sep 13 12:03:22 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 35: Fri Sep 13 12:03:23 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 36: Fri Sep 13 12:03:24 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 37: Fri Sep 13 12:03:25 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 38: Fri Sep 13 12:03:26 PM CEST 2024
+    PID USER                 %CPU %MEM COMMAND
+
+Timestep 39: Fri Sep 13 12:03:27 PM CEST 2024

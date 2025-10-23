@@ -1,0 +1,15 @@
+Error: operation wait on node rabbit@slurmnode1 timed out. Timeout value used: 10000
+/home/ubuntu/shared_nfs_slurm/test_job_submission/example5/./hpc-provider-ex.py:4: FutureWarning: The `qiskit` package is not installed, only `qiskit-terra` is installed. Starting in Qiskit 1.0.0 only the `qiskit` package will be published. Migrate any requirements files still using `qiskit-terra` to use `qiskit` instead. See https://qisk.it/1-0-packaging-migration for more detail.
+  from qiskit import QuantumCircuit
+/home/ubuntu/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/py-hpc-offload-provider-0.1.2-fgtusstdsxasizxcke2joemraft2k5q3/lib/python3.11/site-packages/hpc_offload_provider/provider.py:40: UserWarning: RabbitMQ is not running!!!
+  warn("RabbitMQ is not running!!!")
+Traceback (most recent call last):
+  File "/home/ubuntu/shared_nfs_slurm/test_job_submission/example5/./hpc-provider-ex.py", line 20, in <module>
+    _job = _backend.run(_circuit, shots=1000)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/py-hpc-offload-provider-0.1.2-fgtusstdsxasizxcke2joemraft2k5q3/lib/python3.11/site-packages/hpc_offload_provider/backend.py", line 84, in run
+    if not _job.submit():
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.4.0/py-hpc-offload-provider-0.1.2-fgtusstdsxasizxcke2joemraft2k5q3/lib/python3.11/site-packages/hpc_offload_provider/job.py", line 36, in submit
+    assert declare_rmq_queue(
+AssertionError
