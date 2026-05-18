@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  # ------------------------------------------------------------
+  # Compile all SPANK plugins and the string_preprocess utility.
+  # libslurm-dev provides <slurm/spank.h> so no real SLURM
+  # controller is needed for a build check.
+  # ------------------------------------------------------------
+  build-plugins:
+    name: Build SPANK Plugins
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SLURM development headers
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y libslurm-dev
+
+      - name: Build example1
+        working-directory: src/spank_plugin/example1
+        run: make
+
+      - name: Build load_unload_rabbitmq
+        working-directory: src/spank_plugin/load_unload_rabbitmq
+        run: make
+
+      - name: Build load_unload_mqss
+        working-directory: src/spank_plugin/load_unload_mqss
+        run: make
+
+      - name: Build string_preprocess utility
+        working-directory: utils
+        run: make
+
+  # ------------------------------------------------------------
+  # Static analysis for shell scripts.
+  # Uses shellcheck at warning severity — catches real issues
+  # without being noisy about pure style.
+  # ------------------------------------------------------------
+  lint-shell:
+    name: Lint Shell Scripts
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y shellcheck
+
+      - name: Run shellcheck
+        run: |
+          find src/ mqss_scripts/ -name "*.sh" \
+            | xargs shellcheck --severity=error
+
+  # ------------------------------------------------------------
+  # Python syntax and error check.
+  # Only E9/F-series rules so CI flags real errors (syntax,
+  # undefined names) without complaining about style in
+  # research scripts.
+  # ------------------------------------------------------------
+  lint-python:
+    name: Lint Python Scripts
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Run flake8
+        run: |
+          find . -name "*.py" -not -path "./.git/*" \
+            | xargs flake8 --select=E9 --show-source

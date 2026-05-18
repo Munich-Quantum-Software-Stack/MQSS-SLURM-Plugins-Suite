@@ -7,7 +7,7 @@ if __name__ == "__main__":
     ...
 
     provider = HPCOffloadProvider()
-    backend = provider.get_backend(„QExa20“)
+    backend = provider.get_backend("QExa20")
 
     n = 20 # num_qubits
 

@@ -1,3 +1,49 @@
-# ds_store files
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# C/C++ build artifacts
+*.o
+*.a
+*.so
+*.out
+
+# Compiled binaries (Makefile targets)
+utils/string_preprocess
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# SLURM job output files
+slurm-*.out
+slurm-*.err
+
+# Secrets / credentials
+*.pem
+*.key
+secrets/
+credentials/
+
+# Docker
+.env.local
+.env.*.local
+
+# SLURM deployment build directory
 deployment/slurm

@@ -123,7 +123,7 @@ if __name__ == "__main__":
                 
                 # submit and run the circuit
                 if backend_type == 'sim':
-                    job = execute(qc, backend, shots=n_shots)
+                    job = execute(qc, backend, shots=n_shots)  # noqa: F821 (Qiskit 0.x API)
 
                 # wait for the result
                 counts = job.result().get_counts()
