@@ -24,8 +24,8 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y libslurm-dev
 
-      - name: Build example1
-        working-directory: src/spank_plugin/example1
+      - name: Build example
+        working-directory: src/spank_plugin/example
         run: make
 
       - name: Build load_unload_rabbitmq
