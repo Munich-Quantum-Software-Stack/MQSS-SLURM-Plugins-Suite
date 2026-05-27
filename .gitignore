@@ -4,7 +4,7 @@
 .LSOverride
 ._*
 
-# Editor / IDE
+# Editor/IDE
 .vscode/
 .idea/
 *.swp

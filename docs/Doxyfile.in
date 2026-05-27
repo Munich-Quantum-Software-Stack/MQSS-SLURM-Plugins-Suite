@@ -1,0 +1,33 @@
+# Doxyfile.in — processed by CMake (configure_file) to produce Doxyfile.
+# Variables like @VAR@ are substituted at cmake configure time.
+
+PROJECT_NAME           = "MQSS SLURM Plugins Suite"
+PROJECT_NUMBER         = @PROJECT_VERSION@
+PROJECT_BRIEF          = "SLURM plugins for integrating QPUs into HPC workloads"
+
+OUTPUT_DIRECTORY       = @DOXYGEN_OUTPUT_DIR@
+
+# Source and documentation input
+INPUT                  = @CMAKE_SOURCE_DIR@/docs
+FILE_PATTERNS          = *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = @CMAKE_SOURCE_DIR@/docs/index.md
+
+# Markdown and cross-referencing
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+EXTRACT_ALL            = YES
+
+# Output format — HTML only
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+
+# Strip the absolute source path from output
+STRIP_FROM_PATH        = @CMAKE_SOURCE_DIR@
+
+# Warnings
+WARN_IF_UNDOCUMENTED   = NO
+QUIET                  = NO
