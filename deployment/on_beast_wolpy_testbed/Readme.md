@@ -220,48 +220,14 @@ SlurmdLogFile=/var/log/slurm/slurmd.log
 #SlurmSchedLogFile=
 #SlurmSchedLogLevel=
 #
-# COMPUTE NODES
 
-NodeName=ice[1-2] CPUs=144 Boards=1 SocketsPerBoard=2 CoresPerSocket=36 ThreadsPerCore=2 RealMemory=500000
-PartitionName=ice Nodes=ice[1-2] Default=YES State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-NodeName=thx[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=32 ThreadsPerCore=4 RealMemory=450000
-PartitionName=thx Nodes=thx[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-NodeName=rome[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=64 ThreadsPerCore=2 RealMemory=500000
-PartitionName=rome Nodes=rome[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-NodeName=milan[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=64 ThreadsPerCore=2 RealMemory=1000000
-PartitionName=milan Nodes=milan[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-NodeName=coop1 RealMemory=750000 CPUs=192 Boards=1 SocketsPerBoard=4 CoresPerSocket=24 ThreadsPerCore=2 State=UNKNOWN
-PartitionName=coop Nodes=coop1 State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-NodeName=wolpy[01-22] CPUs=144 Boards=1 SocketsPerBoard=2 CoresPerSocket=36 ThreadsPerCore=2 RealMemory=200000
-PartitionName=wolpy Nodes=wolpy[01-22] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
 ```
 
 - Now, update it and keep it changed as follows
 ```Bash
 SlurmctldHost=wolpy05
 ...
-# NodeName=ice[1-2] CPUs=144 Boards=1 SocketsPerBoard=2 CoresPerSocket=36 ThreadsPerCore=2 RealMemory=500000
-# PartitionName=ice Nodes=ice[1-2] Default=YES State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
 
-# NodeName=thx[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=32 ThreadsPerCore=4 RealMemory=450000
-# PartitionName=thx Nodes=thx[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-# NodeName=rome[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=64 ThreadsPerCore=2 RealMemory=500000
-# PartitionName=rome Nodes=rome[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-# NodeName=milan[1-2] CPUs=256 Boards=1 SocketsPerBoard=2 CoresPerSocket=64 ThreadsPerCore=2 RealMemory=1000000
-# PartitionName=milan Nodes=milan[1-2] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-# NodeName=coop1 RealMemory=750000 CPUs=192 Boards=1 SocketsPerBoard=4 CoresPerSocket=24 ThreadsPerCore=2 State=UNKNOWN
-# PartitionName=coop Nodes=coop1 State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
-
-# NodeName=wolpy[01-22] CPUs=144 Boards=1 SocketsPerBoard=2 CoresPerSocket=36 ThreadsPerCore=2 RealMemory=200000
-# PartitionName=wolpy Nodes=wolpy[01-22] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
 GresTypes=qpu
 NodeName=wolpy[06-08] Gres=qpu:1 CPUs=144 Boards=1 SocketsPerBoard=2 CoresPerSocket=36 ThreadsPerCore=2 RealMemory=200000
 PartitionName=wolpyqpu Nodes=wolpy[06-08] State=UP MaxTime=7-0 OverSubscribe=EXCLUSIVE
