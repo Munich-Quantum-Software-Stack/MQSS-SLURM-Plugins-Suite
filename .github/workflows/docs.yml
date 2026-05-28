@@ -10,12 +10,9 @@ permissions:
   id-token: write
 
 jobs:
-  deploy-docs:
-    name: Build and Deploy Doxygen Docs
+  build-docs:
+    name: Build Doxygen Docs
     runs-on: ubuntu-22.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v4
@@ -31,13 +28,24 @@ jobs:
       - name: Build docs
         run: cmake --build build --target docs
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Upload artifact
+        if: github.ref == 'refs/heads/develop'
         uses: actions/upload-pages-artifact@v3
         with:
           path: build/docs/html
+
+  deploy-docs:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-22.04
+    needs: build-docs
+    if: github.ref == 'refs/heads/develop'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Deploy to GitHub Pages
         id: deployment
