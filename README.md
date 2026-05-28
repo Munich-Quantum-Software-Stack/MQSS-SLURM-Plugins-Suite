@@ -137,7 +137,7 @@ the same license.
 
 Each plugin example has its own `Makefile`. With `libslurm-dev` installed, we can compile the example by simply using `make`.
 
-The resulting `.so` files must be copied to the shared plugin directory on each compute node (default path in the Makefiles: `/home/ubuntu/shared_nfs_slurm/spank_plugins/shared_plugins/`):
+The resulting `.so` files must be copied to the shared plugin directory on each compute node (default path in the Makefiles: `/spank_plugins/shared_plugins/`):
 
 ```bash
 make install
@@ -159,7 +159,7 @@ Detailed setup guides are in `deployment/`:
 |-------------|-------|
 | Virtual machines (Ubuntu 22.04, NFS) | [`deployment/on_virtual_machines/`](deployment/on_virtual_machines/) |
 | Docker containers (local dev) | [`deployment/on_docker_containers/`](deployment/on_docker_containers/) |
-| SLURM build from source (slurm-23.11) | [`deployment/slurm/`](deployment/slurm/) |
+| SLURM build from source | [`slurm-23.11`](https://github.com/SchedMD/slurm/releases/tag/slurm-23-11-9-1) |
 
 A testbed uses two nodes — `slurm_master` (controller) and `slurm_worker` (compute) — connected via NFS at `/home/ubuntu/shared_nfs_slurm`. Jobs are submitted from `slurm_master`.
 
