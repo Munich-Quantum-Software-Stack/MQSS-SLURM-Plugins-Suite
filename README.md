@@ -17,7 +17,10 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 --------------------------------------------------------------------------->
 
 <p align="center">
-  <img src="docs/logos/mqss_logo.svg" width="20%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logos/mqss_logo_dark.svg" width="20%">
+    <img src="docs/logos/mqss_logo.svg" width="20%">
+  </picture>
 </p>
 
 # MQSS SLURM Plugins Suite
