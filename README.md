@@ -163,7 +163,7 @@ Detailed setup guides are in `deployment/`:
 
 A testbed uses two nodes — `slurm_master` (controller) and `slurm_worker` (compute) — connected via NFS at `/home/ubuntu/shared_nfs_slurm`. Jobs are submitted from `slurm_master`.
 
-## 📬 Contact
+## Contact
 
 The development of this project is led by the QCT department at the LRZ. You can reach us at
 [mqss@munich-quantum-valley.de](mailto:mqss@munich-quantum-valley.de).
